@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MANTFAC | Mantenimiento industrial, fabricación e ingeniería</title>
+<meta name="description" content="MANTFAC S.A.C. — Mantenimiento industrial preventivo, predictivo y correctivo; fabricación de componentes a medida; ingeniería, asesoría y suministro industrial en Perú.">
+<meta property="og:title" content="MANTFAC | Soluciones Industriales">
+<meta property="og:description" content="Mantenimiento, fabricación a medida, ingeniería y suministro industrial para plantas, minería e infraestructura.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mantfac.com/">
+<meta property="og:image" content="https://mantfac.com/logo.png">
+<meta property="og:locale" content="es_PE">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mantfac.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MANTFAC",
+  "legalName": "MANTFAC S.A.C.",
+  "alternateName": "MANTFAC Soluciones Industriales",
+  "url": "https://mantfac.com/",
+  "logo": "https://mantfac.com/logo.png",
+  "email": "informes@mantfac.com",
+  "telephone": "+51 978 412 168",
+  "taxID": "20611446447",
+  "description": "Mantenimiento industrial preventivo, predictivo y correctivo, fabricación de componentes a medida, ingeniería, asesoría y suministro industrial en Perú.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" },
+  "areaServed": { "@type": "Country", "name": "Perú" },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+51 978 412 168",
+    "email": "informes@mantfac.com",
+    "contactType": "sales",
+    "availableLanguage": "Spanish"
+  },
+  "knowsAbout": ["Mantenimiento industrial", "Mantenimiento preventivo", "Mantenimiento predictivo", "Mantenimiento correctivo", "Fabricación de componentes a medida", "Estructuras metálicas", "Ingeniería de mantenimiento", "Gestión de activos", "Suministro de repuestos industriales"]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -40 496 545'%3E%3Crect x='-60' y='-40' width='496' height='545' fill='%23000'/%3E%3Cg fill='%23fff'%3E%3Cpolygon points='0,0 150,87 150,161 76,115 76,465 0,465'/%3E%3Crect x='150' y='161' width='76' height='304'/%3E%3Cpolygon points='376,0 226,87 226,161 302,115 302,465 376,465'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0b0b0c; --ink:#151517; --char:#1e1f22; --steel:#2b2d31;
+    --gray:#8a8d93; --line:#e4e4e6; --paper:#f5f5f4; --white:#ffffff;
+    --head:'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --body:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --max:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--head);text-transform:uppercase;letter-spacing:.01em;line-height:1.02}
+  .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gray)}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-weight:600;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;border:1.5px solid var(--white);transition:.25s}
+  .btn-solid{background:var(--white);color:var(--black)}
+  .btn-solid:hover{background:transparent;color:var(--white)}
+  .btn-ghost{color:var(--white)}
+  .btn-ghost:hover{background:var(--white);color:var(--black)}
+  .btn-dark{background:var(--black);color:var(--white);border-color:var(--black)}
+  .btn-dark:hover{background:transparent;color:var(--black)}
+  .btn svg{width:18px;height:18px}
+
+  /* Header */
+  header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-color:rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .logo{display:flex;align-items:center;gap:14px;color:var(--white)}
+  .logo img{height:44px;width:auto}
+  .logo-lock{height:52px;width:auto;display:block}
+  footer .logo-lock{height:60px}
+  .logo-text b{display:block;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:.02em;line-height:1}
+  .logo-text span{display:block;font-family:Arial,Helvetica,sans-serif;font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;color:#d7d8db;margin-top:4px}
+  .menu{display:flex;align-items:center;gap:34px}
+  .menu a{color:#d7d8db;font-size:.88rem;font-weight:500;transition:.2s}
+  .menu a:hover{color:var(--white)}
+  .menu .btn{padding:11px 20px;font-size:.8rem}
+  .burger{display:none;background:none;border:0;color:var(--white);cursor:pointer}
+  .burger svg{width:28px;height:28px}
+
+  /* Hero */
+  .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--white);background:var(--black);overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1581094017399-34c4fb48c65b?auto=format&fit=crop&w=2000&q=80') center/cover;filter:grayscale(1) contrast(1.1);opacity:.42;transform:scale(1.04)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,.25) 40%,rgba(11,11,12,.95) 100%)}
+  .hero .wrap{width:100%}
+  .hero-inner{position:relative;z-index:2;padding-top:150px;padding-bottom:70px}
+  .hero .eyebrow{color:#c9cbcf;display:flex;align-items:center;gap:14px}
+  .hero .eyebrow::before{content:"";width:42px;height:1.5px;background:var(--white)}
+  .hero h1{font-size:clamp(2.9rem,7.4vw,6.4rem);font-weight:700;margin:22px 0 26px;max-width:15ch}
+  .hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--white)}
+  .hero p{max-width:600px;font-size:1.1rem;color:#d3d4d7}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+  .hero-bar{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.14);background:rgba(11,11,12,.6)}
+  .hero-bar .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .hero-bar div{padding:24px 20px 24px 0;border-right:1px solid rgba(255,255,255,.1)}
+  .hero-bar div:last-child{border-right:0}
+  .hero-bar small{display:block;font-family:var(--head);font-size:.95rem;color:var(--gray);letter-spacing:.1em}
+  .hero-bar strong{font-family:var(--head);font-size:1.35rem;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+
+  /* Sections */
+  section{padding:110px 0}
+  .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:60px}
+  .sec-head h2{font-size:clamp(2.3rem,4.6vw,3.8rem);font-weight:700;margin-top:14px}
+  .sec-head p{color:#55585e;font-size:1.04rem;max-width:520px}
+
+  /* Services */
+  .services{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+  .svc{background:var(--white);display:grid;grid-template-rows:240px auto;transition:.3s}
+  .svc-img{overflow:hidden;position:relative}
+  .svc-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:.6s}
+  .svc:hover .svc-img img{filter:grayscale(.2);transform:scale(1.05)}
+  .svc-num{position:absolute;left:0;bottom:0;background:var(--black);color:var(--white);font-family:var(--head);font-size:1.3rem;padding:10px 18px;letter-spacing:.08em}
+  .svc-body{padding:36px 36px 40px}
+  .svc h3{font-size:2rem;font-weight:700;margin-bottom:12px}
+  .svc-body>p{color:#55585e;margin-bottom:22px}
+  .svc ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  .svc li{font-size:.9rem;padding-left:18px;position:relative;color:var(--ink)}
+  .svc li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:1.5px;background:var(--black)}
+
+  /* Maintenance types */
+  .types{background:var(--black);color:var(--white)}
+  .types .sec-head p{color:#a7a9ae}
+  .types .eyebrow{color:#8f9298}
+  .type-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.14)}
+  .type{padding:44px 36px 10px 0;border-right:1px solid rgba(255,255,255,.1);margin-right:36px}
+  .type:last-child{border-right:0;margin-right:0}
+  .type .k{font-family:var(--head);font-size:4.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px #6b6e74}
+  .type h3{font-size:1.9rem;margin:14px 0 12px}
+  .type p{color:#b5b7bb;font-size:.98rem}
+
+  /* Sectors */
+  .sectors{background:var(--paper)}
+  .sector-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .sector{background:var(--white);border:1px solid var(--line);padding:28px 24px;display:flex;flex-direction:column;gap:18px;transition:.25s;min-height:170px}
+  .sector:hover{border-color:var(--black);transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.07)}
+  .sector svg{width:34px;height:34px;stroke:var(--black);fill:none;stroke-width:1.5}
+  .sector h3{font-size:1.35rem;font-weight:600}
+  .sector p{font-size:.86rem;color:#62656b;margin-top:-10px}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+  .step{padding:0 28px 0 0;position:relative}
+  .step::before{counter-increment:s;content:"0" counter(s);font-family:var(--head);font-size:1rem;letter-spacing:.12em;color:var(--gray)}
+  .step .bar{height:2px;background:var(--line);margin:16px 0 26px;position:relative}
+  .step .bar::after{content:"";position:absolute;left:0;top:-4px;width:10px;height:10px;background:var(--black)}
+  .step h3{font-size:1.55rem;margin-bottom:10px}
+  .step p{color:#55585e;font-size:.94rem}
+
+  /* Why */
+  .why{display:grid;grid-template-columns:1.05fr 1fr;gap:0;padding:0;background:var(--black);color:var(--white)}
+  .why-img{background:url('https://images.unsplash.com/photo-1599277186677-fafcf8d96740?auto=format&fit=crop&w=1400&q=80') center/cover;filter:grayscale(1);min-height:560px}
+  .why-body{padding:100px 8%}
+  .why-body h2{font-size:clamp(2.2rem,4vw,3.4rem);margin:14px 0 40px}
+  .why-list{display:grid;gap:28px}
+  .why-item{display:grid;grid-template-columns:44px 1fr;gap:18px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .why-item:last-child{border-bottom:0}
+  .why-item svg{width:30px;height:30px;stroke:var(--white);fill:none;stroke-width:1.5}
+  .why-item h3{font-size:1.35rem;margin-bottom:6px}
+  .why-item p{color:#a9abb0;font-size:.94rem}
+
+  /* CTA band */
+  .band{padding:80px 0;border-bottom:1px solid var(--line)}
+  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+  .band h2{font-size:clamp(2rem,4vw,3.2rem);max-width:18ch}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px}
+  .info h2{font-size:clamp(2.3rem,4.6vw,3.6rem);margin:14px 0 20px}
+  .info>p{color:#55585e;margin-bottom:38px}
+  .info-row{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:center;padding:20px 0;border-top:1px solid var(--line)}
+  .info-row:last-child{border-bottom:1px solid var(--line)}
+  .info-row .ic{width:48px;height:48px;background:var(--black);display:grid;place-items:center}
+  .info-row .ic svg{width:22px;height:22px;stroke:var(--white);fill:none;stroke-width:1.6}
+  .info-row small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gray)}
+  .info-row a,.info-row span{font-weight:600}
+  form{background:var(--paper);padding:44px;border:1px solid var(--line)}
+  form h3{font-size:1.8rem;margin-bottom:6px}
+  form>p{color:#62656b;font-size:.9rem;margin-bottom:28px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:block;font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}
+  .field{margin-bottom:18px}
+  input,select,textarea{width:100%;padding:14px 15px;border:1px solid #d3d4d7;background:var(--white);font:inherit;font-size:.95rem;color:var(--ink);border-radius:0;outline:none;transition:.2s}
+  input:focus,select:focus,textarea:focus{border-color:var(--black)}
+  textarea{min-height:120px;resize:vertical}
+  .form-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+  .form-actions .btn{flex:1;justify-content:center;cursor:pointer;font-family:var(--body)}
+  .btn-line{background:transparent;color:var(--black);border-color:var(--black)}
+  .btn-line:hover{background:var(--black);color:var(--white)}
+
+  /* Footer */
+  footer{background:var(--black);color:#a3a5aa;padding:70px 0 30px}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .foot p{font-size:.9rem;max-width:360px;margin-top:18px}
+  .foot h4{color:var(--white);font-family:var(--head);text-transform:uppercase;letter-spacing:.1em;font-size:1.05rem;margin-bottom:16px}
+  .foot ul{list-style:none;display:grid;gap:9px;font-size:.9rem}
+  .foot a:hover{color:var(--white)}
+  .legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:26px;font-size:.8rem}
+
+  /* WhatsApp float */
+  .wa{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:.25s}
+  .wa:hover{transform:scale(1.08)}
+  .wa svg{width:30px;height:30px;fill:#fff}
+
+  /* Reveal */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+
+  /* Responsive */
+  @media (max-width:980px){
+    .sec-head,.contact-grid,.why{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .sector-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr);gap:40px 0}
+    .type-grid{grid-template-columns:1fr}
+    .type{border-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:36px}
+    .why-img{min-height:320px}
+    .why-body{padding:70px 24px}
+    .foot{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:760px){
+    section{padding:80px 0}
+    .menu{position:fixed;inset:78px 0 auto 0;background:var(--black);flex-direction:column;align-items:flex-start;gap:0;padding:10px 24px 26px;display:none;border-top:1px solid rgba(255,255,255,.08)}
+    .menu.open{display:flex}
+    .menu a{padding:14px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.06)}
+    .menu .btn{margin-top:16px;width:auto;border-bottom:1.5px solid var(--white)}
+    .burger{display:block}
+    .hero-bar .wrap{grid-template-columns:1fr 1fr}
+    .hero-bar div{border-right:0;padding:16px 0}
+    .svc ul{grid-template-columns:1fr}
+    .svc-body{padding:28px 24px 32px}
+    .sector-grid,.steps,.row,.foot{grid-template-columns:1fr}
+    form{padding:30px 22px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#inicio" class="logo" aria-label="MANTFAC inicio">
+            <svg class="logo-lock" viewBox="0 0 1415 465" role="img" aria-label="MANTFAC Soluciones Industriales"><g fill="#fff"><polygon points="0,0 150,87 150,161 76,115 76,465 0,465"/><rect x="150" y="161" width="76" height="304"/><polygon points="376,0 226,87 226,161 302,115 302,465 376,465"/><text x="438" y="303" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="207" textLength="977" lengthAdjust="spacingAndGlyphs">MANTFAC</text><text x="438" y="368" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="47" textLength="977" lengthAdjust="spacing">SOLUCIONES INDUSTRIALES</text></g></svg>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-ghost">Solicitar cotización</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio" style="padding:0">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">MANTFAC S.A.C. · Lima, Perú</div>
+    <h1>Mantenemos tu operación <em>en marcha</em></h1>
+    <p>Mantenimiento industrial preventivo, predictivo y correctivo, fabricación de componentes a medida, ingeniería y suministro industrial para plantas, minería e infraestructura.</p>
+    <div class="hero-cta">
+      <a href="#contacto" class="btn btn-solid">Solicitar cotización
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <div class="wrap">
+      <div><small>01</small><strong>Mantenimiento</strong></div>
+      <div><small>02</small><strong>Fabricación a medida</strong></div>
+      <div><small>03</small><strong>Ingeniería y asesoría</strong></div>
+      <div><small>04</small><strong>Suministro industrial</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">Líneas de servicio</div>
+        <h2>Soluciones integrales para tus activos</h2>
+      </div>
+      <p>Cubrimos el ciclo completo de tus equipos e instalaciones: desde el diagnóstico y el mantenimiento hasta la fabricación de piezas y el suministro de repuestos. Todo con un solo proveedor.</p>
+    </div>
+
+    <div class="services">
+      <article class="svc rv">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1587810437529-635e102c1ac4?auto=format&fit=crop&w=1000&q=75" alt="Técnico realizando mantenimiento mecánico" loading="lazy"><span class="svc-num">01</span></div>
+        <div class="svc-body">
+          <h3>Mantenimiento industrial</h3>
+          <p>Mantenimiento preventivo, predictivo y correctivo de equipos, sistemas e instalaciones, mecánicos y eléctricos.</p>
+          <ul>
+            <li>Ajustes y alineamiento</li>
+            <li>Lubricación de equipos</li>
+            <li>Overhaul de maquinaria</li>
+            <li>Reparación de maquinaria pesada</li>
+            <li>Instalaciones eléctricas</li>
+            <li>Mantenimiento de tableros</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=75" alt="Soldadura y fabricación de estructuras metálicas" loading="lazy"><span class="svc-num">02</span></div>
+        <div class="svc-body">
+          <h3>Fabricación a medida</h3>
+          <p>Diseñamos y fabricamos componentes, piezas y estructuras según los requerimientos técnicos de tu operación.</p>
+          <ul>
+            <li>Componentes mecánicos</li>
+            <li>Piezas de reposición</li>
+            <li>Estructuras metálicas</li>
+            <li>Equipos especiales</li>
+            <li>Adaptaciones y mejoras</li>
+            <li>Fabricación según plano</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1581093196867-ca3dba3c721b?auto=format&fit=crop&w=1000&q=75" alt="Ingeniero revisando planos técnicos" loading="lazy"><span class="svc-num">03</span></div>
+        <div class="svc-body">
+          <h3>Ingeniería y asesoría</h3>
+          <p>Diagnóstico, diseño y consultoría para que tu mantenimiento sea planificado, medible y rentable.</p>
+          <ul>
+            <li>Inspecciones y diagnóstico</li>
+            <li>Calibraciones</li>
+            <li>Planos eléctricos y mecánicos</li>
+            <li>Estrategia de mantenimiento</li>
+            <li>Gestión de activos</li>
+            <li>Optimización de procesos</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=75" alt="Almacén de repuestos industriales" loading="lazy"><span class="svc-num">04</span></div>
+        <div class="svc-body">
+          <h3>Suministro industrial</h3>
+          <p>Comercialización al por mayor y menor de repuestos y equipos, con gestión para evitar paradas no programadas.</p>
+          <ul>
+            <li>Repuestos y componentes</li>
+            <li>Herramientas</li>
+            <li>Equipos industriales</li>
+            <li>Maquinaria</li>
+            <li>Gestión de repuestos críticos</li>
+            <li>Venta por mayor y menor</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIPOS DE MANTENIMIENTO ================= -->
+<section class="types">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">Enfoque técnico</div>
+        <h2>El mantenimiento correcto, en el momento correcto</h2>
+      </div>
+      <p>Combinamos las tres estrategias según la criticidad de cada equipo, para reducir paradas y extender la vida útil de tus activos.</p>
+    </div>
+    <div class="type-grid">
+      <div class="type rv"><div class="k">P</div><h3>Preventivo</h3><p>Intervenciones programadas (inspección, lubricación, ajustes y cambios de componentes) antes de que ocurra la falla.</p></div>
+      <div class="type rv"><div class="k">Pd</div><h3>Predictivo</h3><p>Inspecciones y análisis de condición para detectar desgaste a tiempo y decidir cuándo intervenir.</p></div>
+      <div class="type rv"><div class="k">C</div><h3>Correctivo</h3><p>Reparación y puesta en marcha de equipos con falla, para que la operación se recupere lo antes posible.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTORES ================= -->
+<section class="sectors" id="sectores">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">Sectores que atendemos</div>
+        <h2>Donde hay activos, hay MANTFAC</h2>
+      </div>
+      <p>Trabajamos en plantas productivas y también en edificaciones donde la continuidad de máquinas e instalaciones es crítica.</p>
+    </div>
+    <div class="sector-grid">
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20l4-9 3 4 3-7 6 12"/></svg><h3>Minería</h3><p>Equipos y maquinaria pesada</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M3 21V10l5 3V10l5 3V6l8 4v11z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg><h3>Industria</h3><p>Plantas de producción</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M5 21V3h10v18M15 9h4v12M8 7h2M8 11h2M8 15h2M3 21h18"/></svg><h3>Infraestructura</h3><p>Edificios y oficinas</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6"/></svg><h3>Centros comerciales</h3><p>Instalaciones de alto tránsito</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M2 10l10-6 10 6v11H2zM6 21v-8h12v8M6 16h12"/></svg><h3>Almacenes</h3><p>Logística y distribución</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M4 21V5h16v16M10 9h4M12 7v4M9 21v-5h6v5M2 21h20"/></svg><h3>Clínicas</h3><p>Equipos e instalaciones críticas</p></div>
+      <div class="sector rv"><svg viewBox="0 0 24 24"><path d="M3 21V7h18v14M3 11h18M7 15h2M11 15h2M15 15h2M9 7V4h6v3M2 21h20"/></svg><h3>Hoteles</h3><p>Continuidad de servicios</p></div>
+      <div class="sector rv" style="background:var(--black);color:var(--white);border-color:var(--black)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M12 5v14M5 12h14"/></svg><h3>Tu sector</h3><p style="color:#a9abb0">Cuéntanos tu necesidad</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESO ================= -->
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">Cómo trabajamos</div>
+        <h2>De la visita técnica al equipo operando</h2>
+      </div>
+      <p>Un proceso claro, con atención directa y responsables definidos en cada etapa.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="bar"></div><h3>Visita técnica</h3><p>Vamos a tu planta o instalación para levantar información y entender el problema en sitio.</p></div>
+      <div class="step rv"><div class="bar"></div><h3>Diagnóstico y propuesta</h3><p>Evaluamos el estado de los equipos y te enviamos una cotización con alcance, plazos y recursos.</p></div>
+      <div class="step rv"><div class="bar"></div><h3>Ejecución</h3><p>Ejecutamos el servicio con personal técnico calificado y cumpliendo las condiciones de seguridad de tu operación.</p></div>
+      <div class="step rv"><div class="bar"></div><h3>Entrega y seguimiento</h3><p>Entregamos el trabajo con su registro y te recomendamos las siguientes acciones para tus equipos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUÉ ================= -->
+<section class="why">
+  <div class="why-img" role="img" aria-label="Técnicos industriales trabajando"></div>
+  <div class="why-body">
+    <div class="eyebrow" style="color:#8f9298">Por qué MANTFAC</div>
+    <h2>Un solo aliado para mantener, fabricar y abastecer</h2>
+    <div class="why-list">
+      <div class="why-item rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg><div><h3>Atención directa</h3><p>La gerencia acompaña cada proyecto, desde la visita en planta hasta la entrega.</p></div></div>
+      <div class="why-item rv"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div><h3>Solución integral</h3><p>Mantenimiento, fabricación, ingeniería y repuestos en un mismo proveedor.</p></div></div>
+      <div class="why-item rv"><svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"/><rect x="3" y="3" width="18" height="18"/></svg><div><h3>Contratista o subcontratista</h3><p>Trabajamos directamente con tu empresa o como parte del equipo de tu contratista principal.</p></div></div>
+      <div class="why-item rv"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg><div><h3>Empresa formal</h3><p>MANTFAC S.A.C., RUC 20611446447. Lista para procesos de homologación y licitación.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="band">
+  <div class="wrap rv">
+    <h2>¿Tienes un equipo detenido o un mantenimiento por programar?</h2>
+    <a href="https://wa.me/51978412168?text=Hola%20MANTFAC%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" class="btn btn-dark">Escríbenos por WhatsApp
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto">
+  <div class="wrap contact-grid">
+    <div class="info rv">
+      <div class="eyebrow">Contacto</div>
+      <h2>Hablemos de tu operación</h2>
+      <p>Cuéntanos qué equipo o instalación necesitas atender. Coordinamos una visita técnica y te enviamos una propuesta.</p>
+      <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><div><small>Teléfono / WhatsApp</small><a href="tel:+51978412168">+51 978 412 168</a></div></div>
+      <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 7l9 6 9-6"/></svg></div><div><small>Correo</small><a href="mailto:informes@mantfac.com">informes@mantfac.com</a></div></div>
+      <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><small>Ubicación</small><span>Lima, Perú · Atención a nivel nacional</span></div></div>
+    </div>
+
+    <form id="form" class="rv" novalidate>
+      <h3>Solicita tu cotización</h3>
+      <p>Completa los datos y envíalos por WhatsApp o por correo.</p>
+      <div class="row">
+        <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" required placeholder="Nombre y apellido"></div>
+        <div class="field"><label for="f-empresa">Empresa</label><input id="f-empresa" placeholder="Razón social"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" type="tel" placeholder="+51 ..."></div>
+        <div class="field"><label for="f-serv">Servicio</label>
+          <select id="f-serv">
+            <option>Mantenimiento industrial</option>
+            <option>Fabricación a medida</option>
+            <option>Ingeniería y asesoría</option>
+            <option>Suministro industrial</option>
+            <option>Otro</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label for="f-msg">Detalle del requerimiento</label><textarea id="f-msg" placeholder="Equipo, ubicación, problema o alcance que necesitas"></textarea></div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-dark" data-send="wa">Enviar por WhatsApp</button>
+        <button type="button" class="btn btn-line" data-send="mail">Enviar por correo</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#inicio" class="logo">
+          <svg class="logo-lock" viewBox="0 0 1415 465" role="img" aria-label="MANTFAC Soluciones Industriales"><g fill="#fff"><polygon points="0,0 150,87 150,161 76,115 76,465 0,465"/><rect x="150" y="161" width="76" height="304"/><polygon points="376,0 226,87 226,161 302,115 302,465 376,465"/><text x="438" y="303" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="207" textLength="977" lengthAdjust="spacingAndGlyphs">MANTFAC</text><text x="438" y="368" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="47" textLength="977" lengthAdjust="spacing">SOLUCIONES INDUSTRIALES</text></g></svg>
+        </a>
+        <p>Mantenimiento industrial, fabricación a medida, ingeniería y suministro para plantas, minería e infraestructura.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Mantenimiento industrial</a></li>
+          <li><a href="#servicios">Fabricación a medida</a></li>
+          <li><a href="#servicios">Ingeniería y asesoría</a></li>
+          <li><a href="#servicios">Suministro industrial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+51978412168">+51 978 412 168</a></li>
+          <li><a href="mailto:informes@mantfac.com">informes@mantfac.com</a></li>
+          <li>Lima, Perú</li>
+          <!-- Agrega aquí tus redes reales, por ejemplo:
+          <li><a href="https://www.linkedin.com/company/TU-PERFIL" target="_blank" rel="noopener">LinkedIn</a></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> MANTFAC S.A.C. · RUC 20611446447</span>
+      <span>Todos los derechos reservados</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/51978412168?text=Hola%20MANTFAC%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.7a10.7 10.7 0 01-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1116 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.5c0-.2-.7-1.7-1-2.3s-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.8.4 3.5 3.5 0 00-1.1 2.6 6 6 0 001.3 3.2 13.8 13.8 0 005.3 4.7c.7.3 1.3.5 1.8.6a4.3 4.3 0 002 .1 3.3 3.3 0 002.1-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+  // Header al hacer scroll
+  const header = document.querySelector('header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll); onScroll();
+
+  // Menú móvil
+  const menu = document.getElementById('menu');
+  document.getElementById('burger').addEventListener('click', () => menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // Animación al aparecer
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Año automático
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Formulario -> WhatsApp o correo
+  const v = id => document.getElementById(id).value.trim();
+  document.querySelectorAll('[data-send]').forEach(btn => btn.addEventListener('click', () => {
+    if (!v('f-nombre')) { document.getElementById('f-nombre').focus(); return; }
+    const texto =
+      `Hola MANTFAC, quisiera solicitar una cotización.\n\n` +
+      `Nombre: ${v('f-nombre')}\n` +
+      (v('f-empresa') ? `Empresa: ${v('f-empresa')}\n` : '') +
+      (v('f-tel') ? `Teléfono: ${v('f-tel')}\n` : '') +
+      `Servicio: ${v('f-serv')}\n` +
+      (v('f-msg') ? `Detalle: ${v('f-msg')}` : '');
+    if (btn.dataset.send === 'wa') {
+      window.open('https://wa.me/51978412168?text=' + encodeURIComponent(texto), '_blank');
+    } else {
+      location.href = 'mailto:informes@mantfac.com?subject=' + encodeURIComponent('Solicitud de cotización - ' + v('f-serv')) + '&body=' + encodeURIComponent(texto);
+    }
+  }));
+</script>
+</body>
+</html>
